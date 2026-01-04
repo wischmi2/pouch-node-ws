@@ -266,6 +266,9 @@ C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/gpio/CMakeFiles/rebui
 C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir
 C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/hwinfo/CMakeFiles/edit_cache.dir
 C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/hwinfo/CMakeFiles/rebuild_cache.dir
+C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/i2c/CMakeFiles/drivers__i2c.dir
+C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/i2c/CMakeFiles/edit_cache.dir
+C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/i2c/CMakeFiles/rebuild_cache.dir
 C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir
 C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/pinctrl/CMakeFiles/edit_cache.dir
 C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/pinctrl/CMakeFiles/rebuild_cache.dir

@@ -50,6 +50,12 @@ extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_hwinfo_get_device_eu
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_hwinfo_get_device_id;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_hwinfo_get_reset_cause;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_hwinfo_get_supported_reset_cause;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_configure;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_get_config;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_recover_bus;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_target_driver_register;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_target_driver_unregister;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_transfer;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_busy_wait;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_condvar_broadcast;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_condvar_init;

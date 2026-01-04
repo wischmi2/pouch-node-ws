@@ -21,7 +21,7 @@
 		zephyr,uart-mcumgr = &board_cdc_acm_uart;    /* in zephyr\boards\common\usb\cdc_acm_serial.dtsi:11 */
 		zephyr,bt-mon-uart = &board_cdc_acm_uart;    /* in zephyr\boards\common\usb\cdc_acm_serial.dtsi:12 */
 		zephyr,bt-c2h-uart = &board_cdc_acm_uart;    /* in zephyr\boards\common\usb\cdc_acm_serial.dtsi:13 */
-		nordic,pm-ext-flash = &p25q16h;              /* in pouch\examples\ble_gatt\app.overlay:7 */
+		nordic,pm-ext-flash = &p25q16h;              /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:4 */
 	};
 
 	/* node '/aliases' defined in zephyr\dts\common\skeleton.dtsi:13 */
@@ -517,7 +517,7 @@
 					storage_partition: partition@ec000 {
 						label = "Storage";        /* in zephyr\dts\vendor\nordic\nrf52840_partition_uf2_sdv7.dtsi:43 */
 						reg = < 0xec000 0x8000 >; /* in zephyr\dts\vendor\nordic\nrf52840_partition_uf2_sdv7.dtsi:44 */
-						phandle = < 0x11 >;       /* in pouch\examples\ble_gatt\app.overlay:15 */
+						phandle = < 0x11 >;       /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:12 */
 					};
 
 					/* node '/soc/flash-controller@4001e000/flash@0/partitions/partition@f4000' defined in zephyr\dts\vendor\nordic\nrf52840_partition_uf2_sdv7.dtsi:47 */
@@ -527,10 +527,10 @@
 						reg = < 0xf4000 0xc000 >; /* in zephyr\dts\vendor\nordic\nrf52840_partition_uf2_sdv7.dtsi:50 */
 					};
 
-					/* node '/soc/flash-controller@4001e000/flash@0/partitions/partition@e000' defined in pouch\examples\ble_gatt\app.overlay:28 */
+					/* node '/soc/flash-controller@4001e000/flash@0/partitions/partition@e000' defined in pouch\examples\ble_gatt\boards\xiao_ble.overlay:31 */
 					slot0_partition: partition@e000 {
-						label = "slot0";          /* in pouch\examples\ble_gatt\app.overlay:29 */
-						reg = < 0xe000 0x61000 >; /* in pouch\examples\ble_gatt\app.overlay:30 */
+						label = "slot0";          /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:32 */
+						reg = < 0xe000 0x61000 >; /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:33 */
 					};
 				};
 			};
@@ -660,16 +660,16 @@
 				t-enter-dpd = < 0xbb8 >;                                                                                                    /* in zephyr\boards\seeed\xiao_ble\xiao_ble_common.dtsi:132 */
 				t-exit-dpd = < 0x1f40 >;                                                                                                    /* in zephyr\boards\seeed\xiao_ble\xiao_ble_common.dtsi:133 */
 
-				/* node '/soc/qspi@40029000/p25q16h@0/partitions' defined in pouch\examples\ble_gatt\app.overlay:36 */
+				/* node '/soc/qspi@40029000/p25q16h@0/partitions' defined in pouch\examples\ble_gatt\boards\xiao_ble.overlay:39 */
 				partitions {
-					compatible = "fixed-partitions"; /* in pouch\examples\ble_gatt\app.overlay:37 */
-					#address-cells = < 0x1 >;        /* in pouch\examples\ble_gatt\app.overlay:38 */
-					#size-cells = < 0x1 >;           /* in pouch\examples\ble_gatt\app.overlay:39 */
+					compatible = "fixed-partitions"; /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:40 */
+					#address-cells = < 0x1 >;        /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:41 */
+					#size-cells = < 0x1 >;           /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:42 */
 
-					/* node '/soc/qspi@40029000/p25q16h@0/partitions/partition@0' defined in pouch\examples\ble_gatt\app.overlay:41 */
+					/* node '/soc/qspi@40029000/p25q16h@0/partitions/partition@0' defined in pouch\examples\ble_gatt\boards\xiao_ble.overlay:44 */
 					slot1_partition: partition@0 {
-						label = "slot1";       /* in pouch\examples\ble_gatt\app.overlay:42 */
-						reg = < 0x0 0x61000 >; /* in pouch\examples\ble_gatt\app.overlay:43 */
+						label = "slot1";       /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:45 */
+						reg = < 0x0 0x61000 >; /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:46 */
 					};
 				};
 			};
@@ -1006,6 +1006,7 @@
 		           < 0x8 0x0 &gpio1 0xd 0x0 >,
 		           < 0x9 0x0 &gpio1 0xe 0x0 >,
 		           < 0xa 0x0 &gpio1 0xf 0x0 >;     /* in zephyr\boards\seeed\xiao_ble\seeed_xiao_connector.dtsi:15 */
+		phandle = < 0x12 >;                        /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:25 */
 	};
 
 	/* node '/leds' defined in zephyr\boards\seeed\xiao_ble\xiao_ble_common.dtsi:18 */
@@ -1041,21 +1042,27 @@
 		};
 	};
 
-	/* node '/fstab' defined in pouch\examples\ble_gatt\app.overlay:10 */
+	/* node '/fstab' defined in pouch\examples\ble_gatt\boards\xiao_ble.overlay:7 */
 	fstab {
-		compatible = "zephyr,fstab"; /* in pouch\examples\ble_gatt\app.overlay:11 */
+		compatible = "zephyr,fstab"; /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:8 */
 
-		/* node '/fstab/lfs1' defined in pouch\examples\ble_gatt\app.overlay:12 */
+		/* node '/fstab/lfs1' defined in pouch\examples\ble_gatt\boards\xiao_ble.overlay:9 */
 		lfs1: lfs1 {
-			compatible = "zephyr,fstab,littlefs"; /* in pouch\examples\ble_gatt\app.overlay:13 */
-			mount-point = "/lfs1";                /* in pouch\examples\ble_gatt\app.overlay:14 */
-			partition = < &storage_partition >;   /* in pouch\examples\ble_gatt\app.overlay:15 */
-			automount;                            /* in pouch\examples\ble_gatt\app.overlay:16 */
-			read-size = < 0x10 >;                 /* in pouch\examples\ble_gatt\app.overlay:17 */
-			prog-size = < 0x10 >;                 /* in pouch\examples\ble_gatt\app.overlay:18 */
-			cache-size = < 0x40 >;                /* in pouch\examples\ble_gatt\app.overlay:19 */
-			lookahead-size = < 0x20 >;            /* in pouch\examples\ble_gatt\app.overlay:20 */
-			block-cycles = < 0x200 >;             /* in pouch\examples\ble_gatt\app.overlay:21 */
+			compatible = "zephyr,fstab,littlefs"; /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:10 */
+			mount-point = "/lfs1";                /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:11 */
+			partition = < &storage_partition >;   /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:12 */
+			automount;                            /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:13 */
+			read-size = < 0x10 >;                 /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:14 */
+			prog-size = < 0x10 >;                 /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:15 */
+			cache-size = < 0x40 >;                /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:16 */
+			lookahead-size = < 0x20 >;            /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:17 */
+			block-cycles = < 0x200 >;             /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:18 */
 		};
+	};
+
+	/* node '/water_detect3' defined in pouch\examples\ble_gatt\boards\xiao_ble.overlay:22 */
+	water_detect3 {
+		compatible = "mikroe,water-detect3"; /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:23 */
+		int-gpios = < &xiao_d 0x2 0x0 >;     /* in pouch\examples\ble_gatt\boards\xiao_ble.overlay:25 */
 	};
 };

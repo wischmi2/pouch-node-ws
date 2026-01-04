@@ -101,6 +101,7 @@
 		"C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/flash/cmake_install.cmake",
 		"C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/gpio/cmake_install.cmake",
 		"C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/hwinfo/cmake_install.cmake",
+		"C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/i2c/cmake_install.cmake",
 		"C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/pinctrl/cmake_install.cmake",
 		"C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/pinctrl/renesas/cmake_install.cmake",
 		"C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/drivers/serial/cmake_install.cmake",

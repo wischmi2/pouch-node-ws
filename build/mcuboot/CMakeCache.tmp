@@ -373,7 +373,7 @@ NRFX_DIR:PATH=C:/Users/Brian/pouch-node-ws/modules/hal/nordic/nrfx
 NRF_DIR:PATH=C:/Users/Brian/pouch-node-ws/nrf
 
 //Path to a program.
-OPENOCD:FILEPATH=OPENOCD-NOTFOUND
+OPENOCD:FILEPATH=C:/Users/Brian/xpack-openocd-0.12.0-7-win32-x64/xpack-openocd-0.12.0-7/bin/openocd.exe
 
 //Path to a program.
 PAHOLE:FILEPATH=PAHOLE-NOTFOUND

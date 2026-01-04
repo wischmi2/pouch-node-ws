@@ -1152,10 +1152,7 @@ zephyr_udc0: &usbd {
  compatible = "seeed,xiao-ble";
 };
 # 0 "<command-line>" 2
-# 1 "C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/app.overlay" 1
-
-
-
+# 1 "C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/boards/xiao_ble.overlay" 1
 / {
  chosen {
 
@@ -1175,6 +1172,12 @@ zephyr_udc0: &usbd {
    lookahead-size = <32>;
    block-cycles = <512>;
   };
+ };
+
+ water_detect3 {
+  compatible = "mikroe,water-detect3";
+
+  int-gpios = <&xiao_d 2 (0 << 0)>;
  };
 };
 

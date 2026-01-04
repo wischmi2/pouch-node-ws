@@ -23,6 +23,6 @@ cmake:
   sysbuild: 'true'
 version: '0.1.0'
 west:
-  command: 'C:\Python311\Scripts\west build -b xiao_ble pouch/examples/ble_gatt --pristine=always'
+  command: 'C:\Python311\Scripts\west build -d build -p always -b xiao_ble pouch/examples/ble_gatt'
   topdir: 'C:\Users\Brian\pouch-node-ws'
   version: '1.4.0'

@@ -32,4 +32,4 @@ empty_file.o: C:/Users/Brian/pouch-node-ws/zephyr/misc/empty_file.c \
  C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble/xiao_ble-pinctrl.dtsi \
  C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble/seeed_xiao_connector.dtsi \
  c:\users\brian\pouch-node-ws\zephyr\boards\common\usb\cdc_acm_serial.dtsi \
- C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/app.overlay
+ C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/boards/xiao_ble.overlay

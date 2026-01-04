@@ -15,6 +15,18 @@
 				"$gcc"
 			],
 			"group": "build"
+		},
+		{
+			"label": "West build (ble_gatt)",
+			"type": "shell",
+			"command": "west",
+			"args": [
+				"build",
+				"-d",
+				"build"
+			],
+			"isBackground": false,
+			"group": "build"
 		}
 	]
 }

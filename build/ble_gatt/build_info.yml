@@ -14,7 +14,7 @@ cmake:
      - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/bindings'
     files:
      - 'C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble/xiao_ble.dts'
-     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/app.overlay'
+     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/boards/xiao_ble.overlay'
     include-dirs:
      - 'C:/Users/Brian/pouch-node-ws/nrf/include'
      - 'C:/Users/Brian/pouch-node-ws/nrf/dts/common'
@@ -36,7 +36,7 @@ cmake:
      - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/arc'
      - 'C:/Users/Brian/pouch-node-ws/zephyr/dts'
     user-files:
-     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/app.overlay'
+     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/boards/xiao_ble.overlay'
   kconfig:
     files:
      - 'C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble/xiao_ble_defconfig'
