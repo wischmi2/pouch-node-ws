@@ -1,0 +1,7 @@
+[manifest]
+path = pouch
+file = west-ncs.yml
+
+[zephyr]
+base = zephyr
+

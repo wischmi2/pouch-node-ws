@@ -1,0 +1,56 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt'
+    source-dir: 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt'
+  board:
+    name: 'xiao_ble'
+    path:
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble'
+    qualifiers: 'nrf52840'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/Brian/pouch-node-ws/nrf/dts/bindings'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble/xiao_ble.dts'
+     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/app.overlay'
+    include-dirs:
+     - 'C:/Users/Brian/pouch-node-ws/nrf/include'
+     - 'C:/Users/Brian/pouch-node-ws/nrf/dts/common'
+     - 'C:/Users/Brian/pouch-node-ws/nrf/dts/riscv'
+     - 'C:/Users/Brian/pouch-node-ws/nrf/dts/arm'
+     - 'C:/Users/Brian/pouch-node-ws/nrf/dts'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/include'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/include/zephyr'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/common'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/vendor'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/rx'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/x86'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/xtensa'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/sparc'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/riscv'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/posix'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/arm64'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/arm'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts/arc'
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/dts'
+    user-files:
+     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/app.overlay'
+  kconfig:
+    files:
+     - 'C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble/xiao_ble_defconfig'
+     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/prj.conf'
+     - 'C:/Users/Brian/pouch-node-ws/build/ble_gatt/zephyr/.config.sysbuild'
+    user-files:
+     - 'C:/Users/Brian/pouch-node-ws/pouch/examples/ble_gatt/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/Brian/zephyr-sdk-0.17.4'
+  vendor-specific:
+    nordic:
+      svdfile: 'C:/Users/Brian/pouch-node-ws/modules/hal/nordic/nrfx/mdk/nrf52840.svd'
+  zephyr:
+    version: '4.1.99'
+    zephyr-base: 'C:/Users/Brian/pouch-node-ws/zephyr'
+version: '0.1.0'

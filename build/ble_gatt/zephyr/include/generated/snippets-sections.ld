@@ -1,0 +1,7 @@
+/* Sort key: "default" */#include "../../pouch/golioth_sdk/dispatch.ld"
+/* Sort key: "default" */#include "../../pouch/golioth_sdk/ota.ld"
+/* Sort key: "default" */#include "../../pouch/golioth_sdk/settings_callbacks.ld"
+/* Sort key: "default" */#include "../../pouch/src/downlink_handlers.ld"
+/* Sort key: "default" */#include "../../pouch/src/event_handlers.ld"
+/* Sort key: "default" */#include "../soc/nordic/common/platform_init.ld"
+/* Sort key: "default" */#include "zephyr/linker/intlist.ld"

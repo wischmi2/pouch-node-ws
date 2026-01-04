@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "West build (ble_gatt)",
+			"type": "shell",
+			"command": "west",
+			"args": [
+				"build",
+				"-d",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}

@@ -1,0 +1,2 @@
+"nrf":"C:/Users/Brian/pouch-node-ws/nrf":"C:/Users/Brian/pouch-node-ws/nrf/sysbuild"
+"mcuboot":"C:/Users/Brian/pouch-node-ws/bootloader/mcuboot":"C:/Users/Brian/pouch-node-ws/bootloader/mcuboot/boot/zephyr/sysbuild"

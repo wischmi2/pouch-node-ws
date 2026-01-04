@@ -1,0 +1,39 @@
+config ZEPHYR_POUCH_MODULE
+   bool
+   default y
+menu "nrf (C:/Users/Brian/pouch-node-ws/nrf)"
+osource "C:/Users/Brian/pouch-node-ws/nrf/sysbuild/Kconfig.sysbuild"
+config ZEPHYR_NRF_MODULE
+	bool
+	default y
+endmenu
+config ZEPHYR_MCUBOOT_MODULE
+   bool
+   default y
+config ZEPHYR_MBEDTLS_MODULE
+   bool
+   default y
+config ZEPHYR_OBERON_PSA_CRYPTO_MODULE
+   bool
+   default y
+config ZEPHYR_TRUSTED_FIRMWARE_M_MODULE
+   bool
+   default y
+config ZEPHYR_CMSIS_6_MODULE
+   bool
+   default y
+config ZEPHYR_HAL_NORDIC_MODULE
+   bool
+   default y
+config ZEPHYR_LITTLEFS_MODULE
+   bool
+   default y
+config ZEPHYR_SEGGER_MODULE
+   bool
+   default y
+config ZEPHYR_ZCBOR_MODULE
+   bool
+   default y
+config ZEPHYR_NRFXLIB_MODULE
+   bool
+   default y

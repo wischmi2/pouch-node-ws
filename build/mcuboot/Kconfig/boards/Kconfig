@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "C:/Users/Brian/pouch-node-ws/zephyr/boards/seeed/xiao_ble/Kconfig"
