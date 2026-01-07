@@ -1,0 +1,11 @@
+# Ignore local build outputs
+/build/
+/build_ble_gatt/
+/build_gateway/
+
+# Local virtual environment and editor settings
+/.venv/
+/.vscode/
+
+# West/NCS-fetched HAL content
+/modules/hal/cmsis/
