@@ -1,9 +1,0 @@
-default: ble_gatt
-build_dir: C:/Users/Brian/pouch-node-ws/build
-domains:
-  - name: ble_gatt
-    build_dir: C:/Users/Brian/pouch-node-ws/build/ble_gatt
-  - name: mcuboot
-    build_dir: C:/Users/Brian/pouch-node-ws/build/mcuboot
-flash_order:
-  - ble_gatt
